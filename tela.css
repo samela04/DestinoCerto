@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.topo {
+    background: linear-gradient(to right, black, blue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes button {
+    background: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu {
+    background-color: #1b1bb0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner */
+.banner {
+    background-image: url('assets/Cristo.jpeg');
+    background-size: cover;
+    background-position: down;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+/* Sessão de destaques */
+.destaques {
+    padding: 20px;
+}
+
+.destaques h2 {
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Rodapé */
+.rodape {
+    background: linear-gradient(to right, black, blue);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

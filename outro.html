@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DestinoCerto - Sua próxima viagem começa aqui</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Checkbox hidden para modal de cadastro -->
+<input type="checkbox" id="cadastroModal" class="modal-toggle">
+
+<!-- Modal de Cadastro -->
+<div class="modal-overlay cadastro-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-logo">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h2>Cadastro</h2>
+        </div>
+        
+        <form class="cadastro-form">
+            <div class="form-group">
+                <label for="nomeCompleto">Nome completo</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="senhaCadastro">Senha</label>
+                <input type="password" id="senhaCadastro" name="senha" required>
+            </div>
+            
+            <div class="form-checkboxes">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="aceitarTermos" required>
+                    <span class="checkmark"></span>
+                    Aceitar termos e condições
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="cienteTermos" required>
+                    <span class="checkmark"></span>
+                    Aceito que li e estou ciente dos termos e condições
+                </label>
+            </div>
+            
+            <button type="submit" class="btn-cadastrar">Cadastrar</button>
+            
+            <div class="social-login">
+                <p>Cadastrar com</p>
+                <div class="social-buttons">
+                    <button type="button" class="social-btn google">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button type="button" class="social-btn apple">
+                        <i class="fab fa-apple"></i>
+                    </button>
+                    <button type="button" class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        <label for="cadastroModal" class="modal-close">&times;</label>
+    </div>
+</div>
+    <!-- <CHANGE> Adicionando checkbox hidden e modal de login -->
+<input type="checkbox" id="loginModal" class="modal-toggle">
+
+<!-- Modal de Login -->
+<div class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-logo">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h2>Login</h2>
+        </div>
+        
+        <form class="login-form">
+            <div class="form-group">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            
+            <div class="form-options">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="lembrar">
+                    <span class="checkmark"></span>
+                    Lembrar nome e credenciais
+                </label>
+                <a href="#" class="forgot-password">Esqueci a senha</a>
+            </div>
+            
+            <div class="social-login">
+                <p>Entrar com</p>
+                <div class="social-buttons">
+                    <button type="button" class="social-btn google">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button type="button" class="social-btn apple">
+                        <i class="fab fa-apple"></i>
+                    </button>
+                    <button type="button" class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-login">Concluir</button>
+        </form>
+        
+        <label for="loginModal" class="modal-close">&times;</label>
+    </div>
+</div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>DestinoCerto</span>
+                </div>
+                <div class="header-buttons">
+                    <label for="cadastroModal" class="btn-secondary">Cadastrar</label>
+                    <label for="loginModal" class="btn-secondary">Login</label>
+                    <div class="user-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- navegação principal-->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-items">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Voos</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bed"></i>
+                    <span>Hospedagens</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Atrações</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- background, cristo redentor -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="assets/cristo redentor.jpg" alt="Imagem do Cristo Redentor">
+        </div>
+        <div class="hero-content">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Para onde você quer ir?">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- navegação dentro de navegação -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active">
+                    <i class="fas fa-star"></i>
+                    Destaques
+                </button>
+                <button class="tab">
+                    <i class="fas fa-hotel"></i>
+                    Hotéis
+                </button>
+                <button class="tab">
+                    <i class="fas fa-tag"></i>
+                    Ofertas
+                </button>
+            </div>
+
+            <!-- cartões, quadradinhos -->
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/rio de janeiro .jpg" alt="Cidade do Rio de Janeiro">
+                    </div>
+                    <div class="card-content">
+                        <h3>Rio de Janeiro</h3>
+                        <p>Cidade Maravilhosa</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/sao paulo.jpg" alt="Cidade de São Paulo">
+                    </div>
+                    <div class="card-content">
+                        <h3>São Paulo</h3>
+                        <p>Metrópole vibrante</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/praia bahia.jpg" alt="Praia da Bahia">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bahia</h3>
+                        <p>Praias paradisíacas</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/cidade historica mg.jpg" alt="Cidade História - MG">
+                    </div>
+                    <div class="card-content">
+                        <h3>Minas Gerais</h3>
+                        <p>História e cultura</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- rodape -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-headset"></i> Atendimento</h4>
+                    <ul>
+                        <li>Opções de cancelamento</li>
+                        <li>Suporte ao cliente</li>
+                        <li>Contato (Email, central, telefone)</li>
+                        <li>Política de reembolso</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4><i class="fas fa-chart-line"></i> Sobre a Empresa</h4>
+                    <ul>
+                        <li>Quem somos</li>
+                        <li>Nossa missão e valores</li>
+                        <li>Carreiras</li>
+                        <li>Imprensa / FAQ</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4><i class="fas fa-shield-alt"></i> Políticas e Segurança</h4>
+                    <ul>
+                        <li>Política de privacidade</li>
+                        <li>Termos de uso</li>
+                        <li>Segurança e proteção de dados</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4><i class="fas fa-info-circle"></i> Informações Úteis</h4>
+                    <ul>
+                        <li>Dúvidas populares</li>
+                        <li>Como viajar</li>
+                        <li>Guia das bagagens</li>
+                        <li>Seguro viagem</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>Português (BR) R$ BRL</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Navigation active state
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
